@@ -1,1 +1,57 @@
 
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+<html>
+<style>
+    /* .posts {
+        background-color: aqua;
+        color: whitesmoke;
+        border: black;
+        margin: auto;
+        padding: 2cm;
+    } */
+</style>
+<h1>Homemade Questions</h1>
+<hr>
+<form action="/action_page.php">
+    <label for="posts">What are you thinking about today?</label>
+    <input type="text" id="posts" content="posts">
+</form>
+<div class="textarea">
+    <form class="col s12">
+        <div class="posts">
+            <label for="content">What are you thinking about?</label>
+            <input type="text" id="content">
+
+        </div>
+    </form>
+</div>
+
+Question: <input id="content">
+<button id="ask">Ask</button>
+
+<script>
+    function post() {
+        document.getElementById("ask").innerHTML = content;
+    }
+    document.getElementById('ask').addEventListener('click', post);
+</script>
+
+
+function display(){ }
+
+
+<head>
+
+</head>
+
+<body>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+</body>
+
+</html>
